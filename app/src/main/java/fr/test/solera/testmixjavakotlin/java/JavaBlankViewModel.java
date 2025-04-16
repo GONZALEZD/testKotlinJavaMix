@@ -26,6 +26,6 @@ public class JavaBlankViewModel extends ViewModel {
     }
 
     private void retrieveNumber() {
-        numberLiveData.postValue(repository.getVersion());
+        numberLiveData.postValue(repository.getVersion().getNumber());
     }
 }

@@ -1,12 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt")
+//    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
-    //    id("com.google.devtools.ksp")
-
-    id("io.freefair.lombok")
-    kotlin("plugin.lombok")
 }
 
 android {
@@ -59,15 +56,12 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("com.google.dagger:hilt-android:2.51.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
-
-    compileOnly("org.projectlombok:lombok:1.18.38")
-    kapt("org.projectlombok:lombok:1.18.38")
+    ksp("com.google.dagger:hilt-android-compiler:2.51.1")
 }
 
 
-// Allow references to generated code
-kapt {
-    correctErrorTypes = true
-    keepJavacAnnotationProcessors = true
-}
+//// Allow references to generated code
+//kapt {
+//    correctErrorTypes = true
+//    keepJavacAnnotationProcessors = true
+//}
