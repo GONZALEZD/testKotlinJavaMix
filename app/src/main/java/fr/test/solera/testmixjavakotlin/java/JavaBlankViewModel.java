@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel;
 import javax.inject.Inject;
 
 import dagger.hilt.android.lifecycle.HiltViewModel;
-import fr.test.solera.testmixjavakotlin.repository.IJavaRepository;
+import fr.test.solera.repository.IJavaRepository;
 
 @HiltViewModel
 public class JavaBlankViewModel extends ViewModel {

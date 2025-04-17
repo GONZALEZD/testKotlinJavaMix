@@ -1,8 +1,8 @@
-package fr.test.solera.testmixjavakotlin.repository;
+package fr.test.solera.repository;
 
 import javax.inject.Inject;
 
-import fr.test.solera.testmixjavakotlin.model.LombokData;
+import fr.test.solera.repository.model.LombokData;
 
 public class JavaRepository implements IJavaRepository{
     @Inject

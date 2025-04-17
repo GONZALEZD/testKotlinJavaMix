@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
-import fr.test.solera.testmixjavakotlin.repository.IKotlinRepository
+import fr.test.solera.repository.IKotlinRepository
 import javax.inject.Inject
 
 @HiltViewModel

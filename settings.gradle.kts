@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "TestMixJavaKotlin"
 include(":app")
- 
+include(":repository")

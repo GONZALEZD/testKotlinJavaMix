@@ -1,4 +1,4 @@
-package fr.test.solera.testmixjavakotlin.repository.di;
+package fr.test.solera.repository.di;
 
 import javax.inject.Singleton;
 
@@ -6,10 +6,10 @@ import dagger.Binds;
 import dagger.Module;
 import dagger.hilt.InstallIn;
 import dagger.hilt.components.SingletonComponent;
-import fr.test.solera.testmixjavakotlin.repository.IJavaRepository;
-import fr.test.solera.testmixjavakotlin.repository.IKotlinRepository;
-import fr.test.solera.testmixjavakotlin.repository.JavaRepository;
-import fr.test.solera.testmixjavakotlin.repository.KotlinRepository;
+import fr.test.solera.repository.IJavaRepository;
+import fr.test.solera.repository.IKotlinRepository;
+import fr.test.solera.repository.JavaRepository;
+import fr.test.solera.repository.KotlinRepository;
 
 @Module
 @InstallIn(SingletonComponent.class)
