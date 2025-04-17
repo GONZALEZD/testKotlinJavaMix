@@ -7,9 +7,7 @@ import dagger.Module;
 import dagger.hilt.InstallIn;
 import dagger.hilt.components.SingletonComponent;
 import fr.test.solera.repository.IJavaRepository;
-import fr.test.solera.repository.IKotlinRepository;
 import fr.test.solera.repository.JavaRepository;
-import fr.test.solera.repository.KotlinRepository;
 
 @Module
 @InstallIn(SingletonComponent.class)
@@ -18,7 +16,7 @@ public interface JavaModule {
     @Singleton
     IJavaRepository providesJavaRepository(JavaRepository impl);
 
-    @Binds
-    @Singleton
-    IKotlinRepository providesKotlinRepository(KotlinRepository impl);
+//    @Binds
+//    @Singleton
+//    IKotlinRepository providesKotlinRepository(KotlinRepository impl);
 }

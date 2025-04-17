@@ -10,6 +10,7 @@ plugins {
     kotlin("plugin.lombok")
     id("io.freefair.lombok")
 }
+apply(from = "../gradle/dependencies_group.gradle")
 
 android {
     namespace = "fr.test.solera.repository"
@@ -48,9 +49,13 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
-    implementation("com.google.dagger:hilt-android:2.51.1")
-    ksp("com.google.dagger:hilt-android-compiler:2.51.1")
+//    addHilt()
+//    addLombok()
 
-    compileOnly("org.projectlombok:lombok:1.18.38")
-    annotationProcessor("org.projectlombok:lombok:1.18.38")
+//
+//    implementation("com.google.dagger:hilt-android:2.51.1")
+//    ksp("com.google.dagger:hilt-android-compiler:2.51.1")
+//
+//    compileOnly("org.projectlombok:lombok:1.18.38")
+//    annotationProcessor("org.projectlombok:lombok:1.18.38")
 }

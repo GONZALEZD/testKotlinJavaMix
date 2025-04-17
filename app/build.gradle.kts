@@ -12,6 +12,8 @@ plugins {
     id("io.freefair.lombok")
 }
 
+apply(from = "../gradle/dependencies_group.gradle")
+
 android {
     namespace = "fr.test.solera.testmixjavakotlin"
     compileSdk = 35
